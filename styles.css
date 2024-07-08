@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: "assets/holi/pexels-karolina-grabowska-4041285.jpg";
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.birthday-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 20px 0;
+    object-fit: cover;
+    aspect-ratio: 4 / 3; /* Adjust aspect ratio for landscape */
+    /* filter: sepia(0.3) saturate(1.5) hue-rotate(-10deg) brightness(1.1) contrast(0.9) blur(1px); */
+    transition: all 0.3s ease;
+}
+
+.birthday-image.portrait {
+    aspect-ratio: 3 / 4; /* Adjust aspect ratio for portrait */
+    height: 400px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px; /* Added margin to separate buttons */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#proposal-buttons {
+    margin-top: 20px; /* Added margin-top for spacing */
+}
